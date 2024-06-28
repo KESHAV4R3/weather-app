@@ -1,0 +1,259 @@
+/* haze weather image : https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 */
+
+/* 344px */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --colorDark1: #112D4E;
+    --colorDark2: #3F72AF;
+    --colorLight1: #DBE2EF;
+    --colorLight2: #F9F7F7;
+}
+
+.wrapper {
+    z-index: 100;
+    height: 110vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--colorLight2);
+    letter-spacing: 1px;
+    background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
+}
+
+/* top content */
+.top_content {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 600px;
+    min-width: 325px;
+    text-align: center;
+    margin-top: 50px;
+    word-spacing: 4px;
+    gap: 20px;
+}
+
+.category_select_button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.button {
+    width: 130px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    color: var(--colorLight2);
+    font-size: 15px;
+    background: transparent;
+}
+
+/* access location  */
+
+.access_location {
+    position: absolute;
+    top: 200px;
+    width: 90%;
+    max-width: 600px;
+    min-width: 325px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 28px;
+    font-size: 17px;
+    scale: 0;
+}
+
+.access_location img {
+    width: 60px;
+    height: 60px;
+}
+
+.location_access {
+    width: 130px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    color: var(--colorLight2);
+    font-size: 15px;
+    background: transparent;
+    background-color: rgba(219, 226, 239, 0.5);
+    font-size: 13px;
+    font-weight: 550;
+}
+
+/* your location */
+
+.your_location {
+    position: absolute;
+    top: 260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 18px;
+    font-size: 30px;
+    text-align: center;
+    scale: 0;
+}
+
+.location_address {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px; */
+}
+
+/* .country_flag img {
+    margin-top: 10px;
+    width: 30px;
+    height: 20px;
+} */
+
+/* .weather_type_img img {
+    width: 60px;
+    height: 60px;
+} */
+
+.temperature {
+    font-size: 45px;
+}
+
+.temperature_components {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.temperature_components div {
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    border-radius: 4px;
+    background-color: rgba(219, 226, 239, 0.5);
+    margin-top: 20px;
+    font-size: 19px;
+}
+
+.temperature_components div img {
+    width: 40px;
+    height: 40px;
+}
+
+/* search weather */
+
+.search_weather_city {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 550px;
+    min-width: 325px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    scale: 0;
+}
+
+.search_weather_city input {
+    border: none;
+    width: 85%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(219, 226, 239, 0.5);
+    font-size: 20px;
+    color: white;
+}
+
+.search_weather_city input:focus {
+    outline: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+.search_weather_city input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+}
+
+.search_button {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: var(--colorDark2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active {
+    scale: 1;
+}
+
+/* loading animation */
+
+.loading_animation {
+    position: absolute;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    scale: 0;
+}
+
+.loading_animation p {
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+/* active animation */
+
+@media (min-width:403px) {
+    .top_content {
+        gap: 30px;
+    }
+
+    .button {
+        width: 150px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .your_location {
+        font-size: 35px;
+    }
+
+    .access_location img {
+        width: 83px;
+        height: 83px;
+    }
+}
+
+@media (max-width:380px) {
+    .wrapper {
+        height: 175vh;
+    }
+}
+
+@media (min-width:380px) and (max-width:581px) {
+    .wrapper {
+        height: 145vh;
+    }
+}
