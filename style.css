@@ -109,6 +109,7 @@
     background-color: rgba(219, 226, 239, 0.5);
     font-size: 13px;
     font-weight: 550;
+    pointer-events: auto;
 }
 
 /* your location */
