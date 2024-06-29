@@ -4,89 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <!-- font awesome  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="https://cdn-icons-png.freepik.com/512/7477/7477790.png">
-
 </head>
 
-<body">
+<body>
     <div class="wrapper">
 
         <div id="particles-js"></div>
 
         <div class="content">
-            
-        <div class="top_content">
-            <h1>WEATHER APP</h1>
 
-            <div class="category_select_button">
-                <button class="your_weather button">Your Weather</button>
-                <button class="search_weather button">Search Weather</button>
-            </div>
-        </div>
+            <div class="top_content">
+                <h1>WEATHER APP</h1>
 
-        <div class="access_location">
-            <img src="./images/location.png" alt="location_img" width="80" height="80" loading="lazy">
-            <h1>Grant Location Access</h1>
-            <p>Allow Access to get weather Information</p>
-            <button class="location_access">GRANT ACCESS</button>
-        </div>
-
-        <div class="your_location">
-
-            <div class="location_address">
-                <p class="city_name"></p>
+                <div class="category_select_button">
+                    <button class="your_weather button">Your Weather</button>
+                    <button class="search_weather button">Search Weather</button>
+                </div>
             </div>
 
-            <p class="weather_type"></p>
-            <!-- <div class="weather_type_img"></div> -->
-            <p class="temperature"></p>
+            <div class="access_location">
+                <img src="./images/location.png" alt="location_img" width="80" height="80" loading="lazy">
+                <h1>Grant Location Access</h1>
+                <p>Allow Access to get weather Information</p>
+                <button class="location_access">GRANT ACCESS</button>
+            </div>
 
-            <div class="temperature_components">
+            <div class="your_location">
 
-                <div class="windspeed">
-                    <img src="./images/wind.png" alt="wind_img">
-                    <p class="temperature_comonent_parameters">WINDSPEED</p>
-                    <p class="wind_speed_content temperature_component_content"></p>
+                <div class="location_address">
+                    <p class="city_name"></p>
                 </div>
 
-                <div class="humidity">
-                    <img src="./images/humidity.png" alt="humidity_img">
-                    <p class="temperature_comonent_parameters">HUMIDITY</p>
-                    <p class="humidity_content temperature_component_content"></p>
-                </div>
+                <p class="weather_type"></p>
+                <!-- <div class="weather_type_img"></div> -->
+                <p class="temperature"></p>
 
-                <div class="clouds">
-                    <img src="./images/cloud.png" alt="">
-                    <p class="temperature_comonent_parameters">CLOUDS</p>
-                    <p class="clouds_content temperature_component_content"></p>
+                <div class="temperature_components">
+
+                    <div class="windspeed">
+                        <img src="./images/wind.png" alt="wind_img">
+                        <p class="temperature_comonent_parameters">WINDSPEED</p>
+                        <p class="wind_speed_content temperature_component_content"></p>
+                    </div>
+
+                    <div class="humidity">
+                        <img src="./images/humidity.png" alt="humidity_img">
+                        <p class="temperature_comonent_parameters">HUMIDITY</p>
+                        <p class="humidity_content temperature_component_content"></p>
+                    </div>
+
+                    <div class="clouds">
+                        <img src="./images/cloud.png" alt="">
+                        <p class="temperature_comonent_parameters">CLOUDS</p>
+                        <p class="clouds_content temperature_component_content"></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="search_weather_city">
+
+                <input type="text" placeholder="Search for City..." class="searched_city" autocomplete="off">
+                <div class="search_button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
 
             </div>
-        </div>
 
-        <div class="search_weather_city">
-
-            <input type="text" placeholder="Search for City..." class="searched_city" autocomplete="off">
-            <div class="search_button">
-                <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="loading_animation">
+                <img src="./images/loading.gif" alt="loading...." width="200">
+                <p>Loading...</p>
             </div>
 
         </div>
 
-        <div class="loading_animation">
-            <img src="./images/loading.gif" alt="loading...." width="200">
-            <p>Loading...</p>
-        </div>
     </div>
-
-</div>
-    <div id="particles-js"></div>
     <script src="particles.js"></script>
     <script src="app.js"></script>
     <script src="script.js"></script>
