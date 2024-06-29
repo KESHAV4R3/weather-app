@@ -1,6 +1,5 @@
 /* haze weather image : https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 */
 
-/* 344px */
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +12,7 @@
     --colorLight1: #DBE2EF;
     --colorLight2: #F9F7F7;
 }
+
 .wrapper {
     position: absolute;
     height: 100vh;
@@ -27,8 +27,9 @@
     position: absolute;
     z-index: 1;
     width: 100%;
-    height: 100%; 
+    height: 100%;
 }
+
 .content {
     position: absolute;
     z-index: 2;
@@ -41,6 +42,7 @@
     max-width: 600px;
     pointer-events: none;
 }
+
 /* top content */
 .top_content {
     display: flex;
