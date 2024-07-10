@@ -139,4 +139,4 @@ searched_city.addEventListener('keypress', (event) => {
 });
 
 
-loading_animation.classList.add('active');
+// loading_animation.classList.add('active');
